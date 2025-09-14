@@ -21,16 +21,8 @@ export default function Carousel() {
     return () => clearInterval(interval);
   }, []);
 
-  const prevSlide = () => {
-    setCurr(prev => (prev - 1 + images.length) % images.length);
-  };
-
-  const nextSlide = () => {
-    setCurr(prev => (prev + 1) % images.length);
-  };
-
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full rounded-lg shadow-lg overflow-hidden">
       <div className="carousel w-full">
         {images.map((img, index) => (
           <div
@@ -43,11 +35,11 @@ export default function Carousel() {
         ))}
       </div>
       {/* Dots navigation */}
-      <div className="flex w-full justify-center gap-2 py-2">
+      <div className="flex w-full justify-center gap-2 py-2 bg-amber-400">
         {images.map((img, index) => (
           <button
             key={img.id}
-            className={`btn btn-xs ${index === curr ? "btn-primary" : ""}`}
+            className={`btn btn-xs rounded-sm ${index === curr ? "border-0 bg-amber-700" : ""}`}
             onClick={() => setCurr(index)}
           >
             {index + 1}
@@ -55,42 +47,5 @@ export default function Carousel() {
         ))}
       </div>
     </div>
-// {/* 
-//     <div className="flex flex-col items-center w-full">
-//       <div className="carousel w-full">
-//         <div id="item1" className="carousel-item w-full">
-//           <img
-//             src="about1.jpg"
-//             className="w-full" />
-//         </div>
-//         <div id="item2" className="carousel-item w-full">
-//           <img
-//             src="about2.jpg"
-//             className="w-full" />
-//         </div>
-//         <div id="item3" className="carousel-item w-full">
-//           <img
-//             src="about3.jpg"
-//             className="w-full" />
-//         </div>
-//         <div id="item4" className="carousel-item w-full">
-//           <img
-//             src="about4.jpg"
-//             className="w-full" />
-//         </div>
-//         <div id="item5" className="carousel-item w-full">
-//           <img
-//             src="about5.jpg"
-//             className="w-full" />
-//         </div>
-//       </div>
-//       <div className="flex w-full justify-center gap-2 py-2">
-//         <a href="#item1" className="btn btn-xs">1</a>
-//         <a href="#item2" className="btn btn-xs">2</a>
-//         <a href="#item3" className="btn btn-xs">3</a>
-//         <a href="#item4" className="btn btn-xs">4</a>
-//         <a href="#item5" className="btn btn-xs">5</a>
-//       </div>
-//     </div> */}
   )
 }

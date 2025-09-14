@@ -10,8 +10,10 @@ export default function Navbar() {
 
   return (
     <nav className="max-w-screen-xl fixed w-5/6 z-20 mt-4 start-1/2 -translate-x-1/2">
-      <div className="flex bg-blue-800 rounded-lg justify-between items-center mx-auto px-4 py-2">
-        <div className="flex text-wrap text-white"><h3>Jacob's Portfolio</h3></div>
+      <div className="flex bg-blue-800 rounded-lg justify-between items-center mx-auto px-6 py-2">
+        <div className="flex text-wrap text-white">
+          <h3 className="text-lg font-semibold">{`<Jacob's Portfolio>`}</h3>
+        </div>
         <ul className="md:flex md:flex-row p-4 font-medium hidden space-x-8 text-white">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -22,7 +24,15 @@ export default function Navbar() {
 
         {/* Hamburger Menu */}
         <div className="flex space-x-3 md:space-x-0">
-          <button type="button" className="text-white bg-blue-400 rounded-md px-3 py-2">Resume</button>
+          <a 
+            href="/matiasjacob_resume_2025.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            download
+            className="btn border-0 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 max-w-3xs"
+          >
+            Resume
+          </a>
           <label className="btn btn-circle swap swap-rotate md:hidden">
             {/* this hidden checkbox controls the state */}
             <input 
