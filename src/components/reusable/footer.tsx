@@ -9,7 +9,8 @@ export default function Footer() {
         </div>
       </nav>
       <aside>
-        <p>Copyright © {new Date().getFullYear()} Jacob Matias. All right reserved.</p>
+        <p>Wireframed in Figma and implemented in Visual Studio Code.<br></br>Built with NextJS and TailwindCSS, and deployed on Vercel.</p>
+        <p className="font-bold">Copyright © {new Date().getFullYear()} Jacob Matias. All right reserved.</p>
       </aside>
     </footer>
   )

@@ -16,14 +16,13 @@ export default function Home() {
     <>
       <Navbar />
       <SocialBar />
-      {/* <div className="h-screen w-screen flex flex-col items-center"> */}
       {/* Home */}
       <div id="home" className="flex flex-wrap w-screen justify-center items-center min-h-[90vh]">
-        <div className="flex flex-col basis-140 justify-center">
+        <div className="flex flex-col basis-150 justify-center">
           <h2 className="text-4xl">Hello &#128075;</h2>
           <h2 className="text-4xl">My name is <b>Jacob Matias</b></h2>
           <TypingHeader />
-          <p className="text-xl">passionate about solving complex problems, leveraging data and AI to drive insights, and collaborating to build software and tools with real-world impact.</p>
+          <p className="text-xl w-4/5">passionate about solving complex problems, exploring ways to leverage AI and data, and collaborating with others to turn ideas into solutions with real-world impact.</p>
           <div className="flex flex-row space-x-4 mt-4 mb-2">
             <Socials />
           </div>
@@ -31,7 +30,6 @@ export default function Home() {
             href="/matiasjacob_resume_2025.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            download
             className="btn mt-4 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 py-2 max-w-3xs"
           >
             Download Resume
@@ -60,13 +58,22 @@ export default function Home() {
       <div id="about" className="flex flex-col min-h-screen w-full justify-center items-center">
         <h1 className="text-6xl font-bold text-blue-800 mb-5">About Me</h1>
         <div className="flex flex-row flex-wrap w-4/5 h-5/8 justify-center items-center gap-15">
-          <div className="flex basis-128">
-            <p className="text-lg">
-              I'm a Computer Science New Grad from the University of Toronto!
-              I have professional experience in Full-stack and Cloud development, with a particular interest in frontend and backend development. I'm passionate about finding ways to optimize usability and user experience in software, I'm also interested in finding ways to leverage AI in these solutions.
-              I'm always looking to learn and grow, and I'm excited to connect with like-minded individuals in the tech community.              
-              In my spare time, I love eating good food with family and friends, music, art, cooking, building cool things with AI.
-            </p>
+          <div className="flex basis-130">
+            <div className="flex flex-col gap-2 text-lg">
+              <p className="font-bold">
+                Nice to meet you!
+              </p>
+              <p>
+                I'm a recent Computer Science graduate from the University of Toronto with professional experience in full-stack and cloud development.
+              </p>
+              <p>
+                I'm particularly drawn to UI/UX and backend development, and finding ways to optimize usability and deliver seamless user experiences.
+                I also love experimenting with new technologies and exploring how AI can enhance the products I build, and heavily value collaboration and knowledge sharing in my work.
+              </p>
+              <p>
+                Outside of coding, you'll probably find me hanging out with family and friends, trying out new recipes &#x28;and sharing the results &#x1F642;&#x29;, jamming to music, or hitting the gym.
+              </p>
+            </div>
           </div>
           <div className="flex basis-80">
             <Carousel />
@@ -95,13 +102,13 @@ export default function Home() {
       </div>
 
       {/* Contact */}
-      <div id="contact" className="flex flex-col min-h-screen w-full justify-center items-center">
+      {/* <div id="contact" className="flex flex-col min-h-screen w-full justify-center items-center">
         <div className="text-center w-full">
           <h1 className="text-6xl font-bold text-blue-800 mb-5">Get In Touch</h1>
           <h3 className="text-2xl lg:text-3xl font-bold leading-tight">Have a project in mind? Let's talk.</h3>
         </div>
         <Contact />
-      </div>
+      </div> */}
       <Footer />
       {/* </div> */}
     </>
