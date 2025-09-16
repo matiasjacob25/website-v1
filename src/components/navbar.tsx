@@ -15,11 +15,11 @@ export default function Navbar() {
           <h3 className="text-lg font-semibold">{`<Jacob's Portfolio>`}</h3>
         </div>
         <ul className="md:flex md:flex-row p-4 font-medium hidden space-x-8 text-white">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a className="hover:underline" href="#home">Home</a></li>
+          <li><a className="hover:underline" href="#about">About</a></li>
+          <li><a className="hover:underline" href="#experience">Experience</a></li>
+          <li><a className="hover:underline" href="#projects">Projects</a></li>
+          {/* <li><a href="#contact">Contact</a></li> */}
         </ul>
 
         {/* Hamburger Menu */}
@@ -73,11 +73,11 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-blue-600 text-white rounded-b-lg mt-3">
           <ul className="flex flex-col p-4 font-medium space-y-4">
-            <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
-            <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-            <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+            <li><a className="hover:underline" href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+            <li><a className="hover:underline" href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+            <li><a className="hover:underline" href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
+            <li><a className="hover:underline" href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+            {/* <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li> */}
           </ul>
         </div>
       )}
