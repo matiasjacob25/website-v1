@@ -64,7 +64,7 @@ export default function Home() {
                 Nice to meet you!
               </p>
               <p>
-                I'm a recent Computer Science graduate from the University of Toronto with professional experience in full-stack and cloud development.
+                I'm a recent Computer Science New Grad from the University of Toronto with professional experience in full-stack and cloud development.
               </p>
               <p>
                 I'm particularly drawn to UI/UX and backend development, and finding ways to optimize usability and deliver seamless user experiences.
