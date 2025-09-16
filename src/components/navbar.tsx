@@ -28,7 +28,6 @@ export default function Navbar() {
             href="/matiasjacob_resume_2025.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            download
             className="btn border-0 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 max-w-3xs"
           >
             Resume

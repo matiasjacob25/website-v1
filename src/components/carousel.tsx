@@ -7,7 +7,7 @@ const images = [
   { id: "item2", src: "/about2.jpg" },
   { id: "item3", src: "/about3.jpg" },
   { id: "item4", src: "/about4.jpg" },
-  { id: "item5", src: "/about5.jpg" },
+  // { id: "item5", src: "/about5.jpg" },
 ];
 
 export default function Carousel() {
