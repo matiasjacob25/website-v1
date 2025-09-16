@@ -3,7 +3,7 @@ const experiences = [
     date: "Sep 2024 - Apr 2025",
     title: "Software Developer Intern",
     company: "Temerity Analytics",
-    description: "Developed secure backend features including user permissions systems, authenticated API communication across internal apps, PDF/CSV analytics reporting, and S3 image storage, while monitoring cloud resources to ensure reliability and operational stability. Built CI/CD pipelines with AWS (CodePipeline, CodeBuild, ECR, EC2) and Docker, deployed multi-region environments, and implemented a decentralized database architectures that improved maintainability and reduced account setup times.",
+    description: "Developed secure backend features including user permissions systems, authenticated API communication across internal apps, PDF/CSV analytics reporting, and S3 image storage, while monitoring cloud resources to ensure reliability and operational stability. Built CI/CD pipelines with AWS (CodePipeline, CodeBuild, ECR, EC2) and Docker, deployed multi-region environments, and implemented a decentralized database architecture that improved maintainability and reduced account-setup times.",
     skills: ["Python", "Typescript", "AWS", "Docker", "Django", "PostgreSQL"]
   },
   {
