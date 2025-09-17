@@ -1,3 +1,6 @@
+"use client";
+import { easeOut, motion } from "framer-motion";
+
 const experiences = [
   {
     date: "Sep 2024 - Apr 2025",
@@ -36,39 +39,62 @@ const experiences = [
   }
 ]
 
+// framer motion configs
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2, // each <li> animates 0.2s after the previous
+    },
+  },
+};
 
-
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: easeOut },
+  },
+};
 
 export default function Timeline() {
   return (
-    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-        {experiences.map((exp, idx) => (
-          <li key={idx}>
-            <hr />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className={`${idx % 2 === 0 ? "timeline-start md:text-end" : "timeline-end md:text-start"} mb-10`}>
-              <time className="font-mono italic">{exp.date}</time>
-              <div className="text-lg text-black font-bold">{exp.title}</div>
-              <div className="text-md text-gray-600">@{exp.company}</div>
-              <p className="mt-2 text-justify">{exp.description}</p>
-            </div>
-            <hr />
-          </li>
-        ))}
-      </ul>
-
+    <motion.ul 
+      className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+      variants={container}
+    >
+      {experiences.map((exp, idx) => (
+        <motion.li 
+          key={idx} 
+          variants={item}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <hr className="bg-amber-500"/>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              className="h-5 w-5 fill-amber-700"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div className={`${idx % 2 === 0 ? "timeline-start md:text-end" : "timeline-end md:text-start"} mb-10`}>
+            <time className="font-mono italic">{exp.date}</time>
+            <div className="text-lg text-black font-bold">{exp.title}</div>
+            <div className="text-md text-gray-600">@{exp.company}</div>
+            <p className="mt-2 text-justify">{exp.description}</p>
+          </div>
+          <hr className="bg-amber-500"/>
+        </motion.li>
+      ))}
+    </motion.ul>
   )
 }
