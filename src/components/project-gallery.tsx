@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Card from "./reusable/card";
+import { motion, easeOut } from "framer-motion";
+
 const projects = [ 
   {
     title: "SoundSync Ensemble",
@@ -67,6 +69,25 @@ const projects = [
   }
 ];
 
+// framer motion configs
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2, // 0.2s delay between each card animation
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.3, ease: easeOut },
+  },
+};
+
 export default function ProjectGallery() {
   const [showAll, setShowAll] = useState(false);
 
@@ -74,24 +95,33 @@ export default function ProjectGallery() {
 
   return (
     <div className="flex flex-col items-center w-full p-4 h-full">
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 transition-all duration-500"> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+      <motion.div 
+        variants={container}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8"
+      >
         {displayedProjects.map((project) => (
-          <Card
+          <motion.div
             key={project.title}
-            title={project.title}
-            description={project.description}
-            skills={project.skills}
-            link={project.link}
-            demo={project.demo}
-          />
+            variants={item}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            <Card
+              title={project.title}
+              description={project.description}
+              skills={project.skills}
+              link={project.link}
+              demo={project.demo}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {projects.length > 6 && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className="btn btn-secondary rounded-full bg-amber-500 hover:bg-amber-600 border-0"
+          className="shadow-md btn btn-secondary rounded-full bg-amber-500 hover:bg-amber-600 border-0"
         >
           {showAll ? "Show Less" : "Show More"}
         </button>

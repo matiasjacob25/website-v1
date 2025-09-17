@@ -19,7 +19,7 @@ export default function Card(props: any) {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <button className="btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
+          <button className="hover:scale-110 btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
             Demo
           </button>
         </a>}
@@ -28,7 +28,7 @@ export default function Card(props: any) {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <button className="btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
+          <button className="hover:scale-110 btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
             Code
           </button>
         </a>

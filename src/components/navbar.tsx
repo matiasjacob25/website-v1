@@ -12,13 +12,13 @@ export default function Navbar() {
     <nav className="max-w-screen-xl fixed w-5/6 z-20 mt-4 start-1/2 -translate-x-1/2">
       <div className="flex bg-blue-800 rounded-lg justify-between items-center mx-auto px-6 py-2">
         <div className="flex text-wrap text-white">
-          <h3 className="text-lg font-semibold">{`<Jacob's Portfolio>`}</h3>
+          <h3 className="text-lg font-semibold">{`<matias.jacob2505@gmail.com>`}</h3>
         </div>
         <ul className="md:flex md:flex-row p-4 font-medium hidden space-x-8 text-white">
-          <li><a className="hover:underline" href="#home">Home</a></li>
-          <li><a className="hover:underline" href="#about">About</a></li>
-          <li><a className="hover:underline" href="#experience">Experience</a></li>
-          <li><a className="hover:underline" href="#projects">Projects</a></li>
+          <li className="hover:scale-115 transition-transform duration-100"><a href="#home">Home</a></li>
+          <li className="hover:scale-115 transition-transform duration-100"><a href="#about">About</a></li>
+          <li className="hover:scale-115 transition-transform duration-100"><a href="#experience">Experience</a></li>
+          <li className="hover:scale-115 transition-transform duration-100"><a href="#projects">Projects</a></li>
           {/* <li><a href="#contact">Contact</a></li> */}
         </ul>
 
@@ -28,7 +28,7 @@ export default function Navbar() {
             href="/matiasjacob_resume_2025.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn border-0 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 max-w-3xs"
+            className="shadow-md btn border-0 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 max-w-3xs"
           >
             Resume
           </a>
@@ -72,11 +72,11 @@ export default function Navbar() {
       {/* Hamburger Toggle Menu */}
       {menuOpen && (
         <div className="md:hidden bg-blue-600 text-white rounded-b-lg mt-3">
-          <ul className="flex flex-col p-4 font-medium space-y-4">
-            <li><a className="hover:underline" href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a className="hover:underline" href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a className="hover:underline" href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
-            <li><a className="hover:underline" href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+          <ul className="flex flex-col p-4 font-medium space-y-4 ml-3">
+            <li className="hover:scale-110 origin-left transition-transform duration-200"><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+            <li className="hover:scale-110 origin-left transition-transform duration-200"><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+            <li className="hover:scale-110 origin-left transition-transform duration-200"><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
+            <li className="hover:scale-110 origin-left transition-transform duration-200"><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
             {/* <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li> */}
           </ul>
         </div>
