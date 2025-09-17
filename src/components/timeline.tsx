@@ -88,8 +88,8 @@ export default function Timeline() {
           </div>
           <div className={`${idx % 2 === 0 ? "timeline-start md:text-end" : "timeline-end md:text-start"} mb-10`}>
             <time className="font-mono italic">{exp.date}</time>
-            <div className="text-lg text-black font-bold">{exp.title}</div>
-            <div className="text-md text-gray-600">@{exp.company}</div>
+            <div className="text-lg text-black dark:text-white font-bold">{exp.title}</div>
+            <div className="text-md text-gray-600 dark:text-gray-300">@{exp.company}</div>
             <p className="mt-2 text-justify">{exp.description}</p>
           </div>
           <hr className="bg-amber-500"/>
