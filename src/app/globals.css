@@ -11,15 +11,6 @@
   --color-foreground: var(--foreground);
 }
 
-
-@theme {
-  --color-metallic-primary: #7091E6;
-  --color-metallic-secondary: #3D52A0;
-  --color-metallic-text-primary: #8697C4;
-  --color-metallic-surface: #ADBBDA;
-  --color-metallic-background: #EDE8F5;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
