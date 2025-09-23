@@ -12,7 +12,7 @@ export default function TypingHeader() {
   });
 
   return (
-    <h1 className="font-bold text-[clamp(1.5rem,2.5rem,2.5rem)]">
+    <h1 className="font-bold text-[clamp(1.5rem,5vw,2.5rem)]">
       I'm a <span className="text-blue-400">{text}</span>
       <Cursor cursorColor="#4AA3FF" />
     </h1>
