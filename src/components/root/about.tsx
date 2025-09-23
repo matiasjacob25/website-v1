@@ -11,7 +11,7 @@ export default function About() {
       transition={{ duration: 1.0, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <div id="about" className="flex flex-col min-h-screen w-full justify-center items-center">
+      <div id="about" className="flex flex-col min-h-screen w-full justify-center items-center mb-30 md:mb-10">
         <h1 className="text-6xl font-bold text-blue-800 mb-5">About Me</h1>
         <div className="flex flex-row flex-wrap w-4/5 h-5/8 justify-center items-center gap-15">
           <div className="flex basis-130">

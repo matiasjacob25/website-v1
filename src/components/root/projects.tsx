@@ -11,7 +11,7 @@ export default function Projects() {
       transition={{ duration: 1.0, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.1 }}
     >
-      <div id="projects" className="flex flex-col min-h-screen w-screen justify-center items-center">
+      <div id="projects" className="flex flex-col min-h-screen w-screen justify-center items-center mb-30 md:mb-0">
         <h1 className="text-6xl font-bold text-blue-800 mb-5">Projects</h1>
         <ProjectGallery />
       </div>

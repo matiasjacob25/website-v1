@@ -9,7 +9,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="max-w-screen-xl fixed w-5/6 z-20 mt-4 start-1/2 -translate-x-1/2">
+    <nav className="max-w-screen-xl fixed w-5/6 z-20 top-4 start-1/2 -translate-x-1/2">
       <div className="flex bg-blue-800 rounded-lg justify-between items-center mx-auto px-6 py-2">
         <div className="flex text-wrap text-white">
           <h3 className="text-xl font-bold">{`<JM>`}</h3>

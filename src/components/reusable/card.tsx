@@ -1,6 +1,6 @@
 export default function Card(props: any) {
   return (
-    <div className="card bg-base-100 w-96 h-96 shadow-sm flex flex-col justify-between items-center p-4 gap-4">
+    <div className="card bg-base-100 w-80 h-110 md:w-96 md:h-96 shadow-sm flex flex-col justify-between items-center p-4 gap-4">
       <div className="flex flex-col justify-start items-start">
         <h2 className="card-title">{props.title}</h2>
         <p>{props.description}</p>

@@ -20,7 +20,7 @@ export default function SkillsDisplay() {
   ];
 
   return (
-    <div className="w-full flex flex-row flex-wrap justify-center space-x-10">
+    <div className="w-full flex flex-row flex-wrap justify-center gap-x-10">
       {skills.map((category) => (
         <div key={category.category} className="mb-6 flex flex-col justify-start items-center">
           <h2 className="text-2xl font-bold mb-4">{category.category}</h2>
