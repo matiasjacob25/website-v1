@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function TypingHeader() {
   const [text] = useTypewriter({
-    words: ["Software Developer", "Cloud Engineer", "Full-Stack Developer", "UI/UX Developer"],
+    words: ["Software Developer", "UI/UX Enthusiast", "Backend Developer", "Cloud Developer"],
     loop: 0, // 0 = infinite loop
     typeSpeed: 100,
     deleteSpeed: 50,
