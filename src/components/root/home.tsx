@@ -18,7 +18,7 @@ export default function Home() {
           <h2 className="text-4xl">Hello &#128075;</h2>
           <h2 className="text-4xl">My name is <b>Jacob Matias</b></h2>
           <TypingHeader />
-          <p className="text-xl md:w-4/5">passionate about solving complex problems, exploring ways to leverage AI and data, and collaborating with others to turn ideas into solutions with real-world impact.</p>
+          <p className="text-xl p-2 md:p-0 md:w-4/5">passionate about solving complex problems, exploring ways to leverage AI and data, and collaborating with others to turn ideas into solutions with real-world impact.</p>
           <div className="flex flex-row space-x-4 mt-4 mb-2">
             <AnimatedSocials />
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
             animate={{ y: [0, -6, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: easeInOut }}
           >
-            <div className="w-auto flex flex-col items-center hover:scale-110 transition-transform">
+            <div className="w-1/8 flex flex-col items-center hover:scale-110 transition-transform">
               <span className="font-bold text-[#1DA1F2]">Learn More</span>
               <FaArrowDown className="mt-1 ml-1 text-[#1DA1F2]" />
             </div>

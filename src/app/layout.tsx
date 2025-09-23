@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${googleSansCode.variable} ${inter.variable} ${lexendDeca.variable} antialiased`}
+        className={`${googleSansCode.variable} ${inter.variable} ${lexendDeca.variable} antialiased overflow-x-hidden`}
       >
         {children}
         <Analytics />
