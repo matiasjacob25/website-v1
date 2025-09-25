@@ -12,26 +12,19 @@ export default function Card(props: any) {
           ))}
         </ul>
       </div>
-      <div className="w-full flex flex-row justify-end gap-2">
-        {props.demo && 
-        <a 
-          href={props.demo} 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          <button className="hover:scale-110 btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
-            Demo
-          </button>
-        </a>}
-        <a 
-          href={props.link} 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          <button className="hover:scale-110 btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
-            Code
-          </button>
-        </a>
+      <div className="w-full flex flex-row flex-wrap justify-end gap-2">
+        {props.links.map((link: {label: string, link: string}, index: number) => (
+          <a
+            key={index}
+            href={link.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <button className="hover:scale-110 btn btn-primary bg-[#1DA1F2] border-0 rounded-md">
+              {link.label}
+            </button>
+          </a>
+        ))}
       </div>
     </div>
   )
