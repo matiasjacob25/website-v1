@@ -15,7 +15,7 @@ const projects = [
     ]
   },
   {
-    title: "Langchain NASA API Tool",
+    title: "LangChain NASA API Tool",
     description: "Open Source Contribution - a LangChain toolkit that fetches and returns space-related image and video resources from the NASA Image & Video Library based on user queries.",
     skills: ["Python", "LLM", "Prompt Engineering", "Jupyter Notebooks"],
     links: [
