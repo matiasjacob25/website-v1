@@ -4,14 +4,14 @@ import { easeOut, motion } from "framer-motion";
 const experiences = [
   {
     date: "Sep 2024 - Apr 2025",
-    title: "Software Developer Intern",
+    title: "Full-Stack Developer Intern",
     company: "Temerity Analytics",
     description: "Developed secure backend features including user permissions systems, authenticated API communication across internal apps, PDF/CSV analytics reporting, and S3 image storage, while monitoring cloud resources to ensure reliability and operational stability. Built CI/CD pipelines with AWS (CodePipeline, CodeBuild, ECR, EC2) and Docker, deployed multi-region environments, and implemented a decentralized database architecture that improved maintainability and reduced account-setup times.",
     skills: ["Python", "Typescript", "AWS", "Docker", "Django", "PostgreSQL"]
   },
   {
     date: "May 2024 - Aug 2024",
-    title: "Software Developer - Contract",
+    title: "Software Developer - Part-Time",
     company: "University of Toronto",
     description: "Worked on the initial development of a Rosetta-Stone-style educational game for incoming first-year, ESL, CS/Math/Stats UofT students. Developed Python scripts to automate translation and database loading of terms using Google Cloud and DeepL APIs, and contributed to the design of a relational database schema for term and level mapping. Collaborated with developers, translators, and game designers to ensure language accuracy and gameplay alignment.",
     skills: ["Python", "NextJS", "MySQL", "Google Cloud", "DeepL"]
@@ -25,7 +25,7 @@ const experiences = [
   },
   {
     date: "Jan 2023 - Aug 2023",
-    title: "Software Developer Intern",
+    title: "Cloud Developer Intern",
     company: "Caseware International",
     description: "Supported the design, development, and deployment of a new historical data extraction feature by implementing an ETL pipeline to extract and process historical data. Utilized AWS services including Lambda, Glue, SNS, SQS, RDS, and Step Functions to support cloud infrastructure and automated workflows. Integrated multiple Angular UI components and maintained API documentation using Redocly, ensuring smooth communication between backend services and frontend applications.",
     skills: []
