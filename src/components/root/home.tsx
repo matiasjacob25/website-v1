@@ -23,7 +23,7 @@ export default function Home() {
             <AnimatedSocials />
           </div>
           <a 
-            href="/matiasjacob_resume_2025.pdf" 
+            href="/matiasjacob_resume_2026.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="shadow-md btn mt-4 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 py-2 max-w-3xs"
