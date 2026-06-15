@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* Hamburger Menu */}
         <div className="flex space-x-3 md:space-x-0">
           <a 
-            href="/matiasjacob_resume_2025.pdf" 
+            href="/matiasjacob_resume_2026.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="shadow-md btn border-0 bg-amber-500 hover:bg-amber-600 text-white rounded-md px-3 max-w-3xs"
